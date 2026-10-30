@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Custody Record</title>
+  <meta name="description" content="Private, offline record of parenting time, school activities, incidents and discussions.">
+  <meta name="theme-color" content="#1f4e79">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Custody Record">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" href="icon-512.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="lock" class="lock" hidden>
+    <form id="lockform" class="lock-box">
+      <div class="lock-title">Custody Record</div>
+      <p>Enter your passcode</p>
+      <input id="lockpin" type="password" inputmode="numeric" autocomplete="off" aria-label="Passcode">
+      <button class="btn primary" type="submit">Unlock</button>
+      <p id="lockmsg" class="lock-msg"></p>
+    </form>
+  </div>
+
+  <div class="shell">
+    <nav id="nav" class="nav noprint" aria-label="Sections"></nav>
+    <main id="main" class="main" tabindex="-1"></main>
+  </div>
+
+  <div id="tip" class="tip" role="tooltip" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
